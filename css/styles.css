@@ -1,3 +1,7 @@
+html{ 
+    background-color: #eeeeff;
+    
+}
 body{
     display: grid;
     /*3-column layout*/
@@ -8,29 +12,19 @@ body{
     "footer footer footer"
     ;
     grid-template-columns: 1fr 9fr 1fr;
-
-    background-color: red;/*named colours ONLY for experimenting. Use hexcodes for real designs*/
 }
 
 header {
     grid-area: header;
-
-    background-color: yellow;
 }
 aside {
     grid-area: aside;
-
-    background-color: green;
 }
 main {
     grid-area: main;
-
-    background-color: blue;
 }
 footer {
     grid-area: footer;
-
-    background-color: orange;
 }
 
 img{
@@ -46,8 +40,6 @@ img{
             ". main main main main main ."
             ". footer footer footer footer footer .";
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        
-        background: green;
     }
 
     .jobs, .portfolio{
