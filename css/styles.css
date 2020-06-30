@@ -1,3 +1,38 @@
-html{
-    background-color: red;
+body{
+    display: grid;
+    grid-template-areas: 
+    ". header ."
+    "aside aside aside"
+    ". main ."
+    "footer footer footer"
+    ;
+    grid-template-columns: 1fr 9fr 1fr;
+
+    background-color: red;/*named colours ONLY for experimenting. Use hexcodes for real designs*/
+}
+
+header {
+    grid-area: header;
+
+    background-color: yellow;
+}
+aside {
+    grid-area: aside;
+
+    background-color: green;
+}
+main {
+    grid-area: main;
+
+    background-color: blue;
+}
+footer {
+    grid-area: footer;
+
+    background-color: orange;
+}
+
+img{
+    width: 100%;
+    height: auto;
 }
