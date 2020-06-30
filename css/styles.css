@@ -1,5 +1,6 @@
 body{
     display: grid;
+    /*3-column layout*/
     grid-template-areas: 
     ". header ."
     "aside aside aside"
@@ -39,6 +40,26 @@ img{
 
 @media (min-width: 600px) {
     body {
-      background: green;
+        /*7-column layout*/
+        grid-template-areas: 
+            ". header header header aside aside ."
+            ". main main main main main ."
+            ". footer footer footer footer footer .";
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        
+        background: green;
     }
+
+    .jobs, .portfolio{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .job{
+        width: 45%;
+    }
+    .piece{
+        width: 30%;
+    }
+
 }
